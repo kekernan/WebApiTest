@@ -2,11 +2,11 @@
  
    // Enter the MAP Server URL be sure to not include http:// or https:// 
    // For example your_url.com exlcude the http:// 
-   $MAPSUrl = "argos1.cc.lehigh.edu"; // use your_url.com
+   $MAPSUrl = "evisions1.cc.lehigh.edu:8081"; // use your_url.com
     
    // Enter MAPS username and password
-   $username = "kak306";
-   $password = "23April16!";
+   $username = "";
+   $password = "";
     
    // Enter the datablock number, you can find it in Argos webviewer
    $datablock = $_GET['db'];
@@ -17,7 +17,7 @@
    
    // Hash variable is used to pass parameter through the API. 
    // Only a edit box variable named incoming_hash_txt can receive the hash variable.
-   $hash = $_GET['pidm'];    
+   $hash = $_GET['id'];    
    
    // First call to get the Session ID
    $Sessionurl = "https://" . $MAPSUrl . "/mw/Session.Setup?Version=4.3&JSONData={\"Mapplets\":[{\"Guid\":\"B052A35E-DC3B-4283-B732-7BEE3B095C5E\",\"Version\":\"4.3\"}]}";
